@@ -43,6 +43,7 @@ class App extends Component {
               <Route path="/contactus" strict element={<Contactus />} />
               <Route path="/services" strict element={<Services />} />
               <Route path="/projects" strict element={<Projects />} />
+              <Route path='*' element={<Home />} />
             </Routes>
 
           </Sidebar>
