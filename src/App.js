@@ -26,7 +26,7 @@ class App extends Component {
             content={[<SidebarItem>
               <div class="logo">
                 {/* <h1><Link to="/">MVS<h6>constructons</h6></Link></h1> */}
-                <Link><img src={logo} /></Link>
+                <Link to="/"><img src={logo} /></Link>
             </div>
                <ul className='nav-ul'>
               <NavLink className={(navData) => (navData.isActive ? 'active' : '')} to="/"><li>Home </li></NavLink>
@@ -39,6 +39,7 @@ class App extends Component {
 
             <Routes>
               <Route path="/" exact strict element={<Home />} />
+              <Route path="/mvs2" exact strict element={<Home />} />
               <Route path="/about" strict element={<Aboutus />} />
               <Route path="/contactus" strict element={<Contactus />} />
               <Route path="/services" strict element={<Services />} />
